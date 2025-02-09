@@ -1,21 +1,22 @@
-//01-Crie uma variável chamada nome e atribua seu nome a ela. Em seguida, exiba o valor dessa variável.
-console.log('------------------- Questão: 01 ------------------------');
+//------------------------------------------------------------------------
+
+console.log('// Questão 01');
 
 let nome = 'Irlanda Hildeney Oliveira Teixeira';
 console.log(nome);
 
-//02 - Crie duas variáveis: uma chamada idade e outra chamada altura. Atribua a idade o valor 25 e a altura o valor 1.75. Exiba ambos os valores.
+//------------------------------------------------------------------------
 
-console.log('------------------- Questão: 02 ------------------------');
+console.log('// Questão 02');
 
 let idade = 25;
 let altura = 1.75;
 
 console.log('Idade: '+idade+', Altura: '+altura);
 
-//03 - Crie uma variável chamada preco com o valor 50 e uma variável desconto com o valor 0.2 (20%). Calcule o preço com desconto e exiba o valor final.
+//------------------------------------------------------------------------
 
-console.log('------------------- Questão: 03 ------------------------');
+console.log('// Questão 03 ');
 
 let preco = 50;
 let desconto = 20;
@@ -24,9 +25,9 @@ total_valor = preco * (desconto/100);
 
 console.log('Preço: R$ '+preco.toFixed(2)+', com desconto de 20%. Valor final: R$ '+total_valor.toFixed(2));
 
-//04-Crie uma variável chamada temperatura e atribua o valor 30. Se a temperatura for maior que 25, exiba a mensagem "Está calor!". Caso contrário, exiba "Está fresco!".
+//------------------------------------------------------------------------
 
-console.log('------------------- Questão: 04 ------------------------');
+console.log('// Questão 04');
 
 let temperatura = 30;
 
@@ -36,11 +37,11 @@ if (temperatura > 25){
     console.log('Está freco!');
 }
 
-//05-Crie uma variável idade e atribua um valor. Se a pessoa for maior de idade (18 ou mais), exiba "Você é maior de idade". Caso contrário, exiba "Você é menor de idade".
+//------------------------------------------------------------------------
 
 
 
-console.log('------------------- Questão: 05 ------------------------');
+console.log('// Questão 05');
 
 let idade_ = 15;
 
@@ -49,8 +50,8 @@ resultado = idade_ >= 18 ? 'Você é maior de idade!' : 'Você é menor de idade
 console.log(resultado);
 
 
-//06-Crie uma variável chamada nota e atribua um valor entre 0 e 10. Se a nota for maior ou igual a 7, exiba "Aprovado". Se for entre 5 e 6, exiba "Recuperação". Caso contrário, exiba "Reprovado".
-console.log('------------------- Questão: 06 ------------------------');
+//------------------------------------------------------------------------
+console.log('// Questão 06 ');
 
 let nota = 4;
 
@@ -62,9 +63,9 @@ if (nota >= 7){
     console.log('Reprovado');
 }
 
-//07- Crie duas variáveis, numero1 e numero2, e atribua valores a elas. Verifique se os dois números são iguais e, caso sejam, exiba "Os números são iguais". Caso contrário, exiba "Os números são diferentes".
+//------------------------------------------------------------------------
 
-console.log('------------------- Questão: 07 ------------------------');
+console.log('// Questão 07');
 
 let numero1 = 56;
 let numero2 = 56;
@@ -73,8 +74,8 @@ let numero2 = 56;
 let comparacao = numero1 == numero2? 'Os números são iguais' : 'Os números são diferentes';
 console.log(comparacao);
 
-//08- Crie uma variável chamada nome e uma variável chamada idade. Exiba a mensagem "Olá, meu nome é [nome] e eu tenho [idade] anos", utilizando concatenação.
-console.log('------------------- Questão: 08 ------------------------');
+//------------------------------------------------------------------------
+console.log('// Questão 08 ');
 
 
 let nomeUser = 'Gabriel Oliveira';
@@ -84,7 +85,7 @@ console.log(`Olá meu nome é ${nomeUser} e eu tenho ${idadeUser} anos.`);
 
 //09-Crie um loop que imprima os números de 1 a 10 na tela.
 
-console.log('------------------- Questão: 09 ------------------------');
+console.log('// Questão 09 ');
 
 let num = 1;
 
@@ -92,25 +93,26 @@ while (num <= 10){
     console.log(num);
     num++;
 } 
-// 10-  Crie um loop que peça ao usuário para digitar um número até que ele digite o número 5.
+// ------------------------------------------------------------------------
+//coloquei em comentario para não ter erro na execução do código, devido a utilização do prompt para obter os dados do usuario.
 /*
-console.log('------------------- Questão: 10 ------------------------');
+console.log('// Questão 10 ');
 
 let numR ;
 
 while (numR != 5){
     // uso do prompt para obter dados 
-    numR = prompt('Digite um numero qualquer que nao seja (5)');
+    numR = parseInt(prompt('Digite um numero qualquer que nao seja (5)'));
     
 }
 
 console.log('Você nao seguiu as instruções. Programa encerrado!')
 */
 
-// 11-Crie um loop que imprima a tabuada do número 7, de 1 a 10.
+//------------------------------------------------------------------------
 
 
-console.log('------------------- Questão: 11 ------------------------');
+console.log('// Questão 11 ');
 
 let tabuada = 7;
 
@@ -123,8 +125,8 @@ while (numS <= 10){
     numS++;
 }
 
-//12 - Crie um loop que exiba todos os números pares de 0 a 20.
-console.log('------------------- Questão: 12 ------------------------');
+//------------------------------------------------------------------------
+console.log('//Questão 12 ');
 
 let num_A = 0;
 
@@ -138,13 +140,60 @@ while(num_A <= 20){
         }
 }
 
-// 13 - Escreva um código que calcule a área de um círculo. Utilize uma função para realizar o cálculo. A função deve receber o raio como parâmetro e retornar a área.
+//------------------------------------------------------------------------
+console.log('// Questão 13')
 
+function calculeAreaCirculo(raio){
+    let pi = 3.14159;
+    let area = pi * (raio**2);
+    return area
 
+}
 
+let raio = 5;
+let area = calculeAreaCirculo(raio);
+console.log(`A area do circulo é: ${area}`)
 
+//------------------------------------------------------------------------
 
-console.log('------------------- Questão: 13 ------------------------');
-console.log('------------------- Questão: 14 ------------------------');
-console.log('------------------- Questão: 15 ------------------------');
-console.log('------------------- Questão:  ------------------------');
+console.log('//Questão 14');
+
+function somaDois(x,y){
+    let soma = x + y;
+    return soma;
+
+}
+
+let x = 89;
+let y = 1000;
+
+let result = somaDois(x,y);
+console.log(`A soma entre ${x} e ${y} é igual a ${result}`);
+
+/* explicação
+A função somaDois recebe dois parametros x e y, que retorna uma soma entre os 
+números. Após isso, é criada a variavel soma, que faz a operação e o return, retorna
+o valor da soma.
+A variavel x e y criadas logo em seguida servem como armazenamento da informação que 
+será manipulada.o console.log exibe o resultado desta operação. */
+
+//------------------------------------------------------------------------
+
+console.log('//Questão 15');
+/*Podemos utilizar a função da questão anterior e mudar apenas a variavel 'let' para 'const'
+para a variavel nao mude de valor
+*/
+
+function somaDois(x,y){
+    let soma = x + y;
+    return soma;
+
+}
+
+const a_num1 = 10;
+const b_num2 = 20;
+
+const resultSoma = somaDois(a_num1,b_num2);
+
+console.log(resultSoma);
+
