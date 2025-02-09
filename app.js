@@ -83,8 +83,7 @@ let idadeUser = 22;
 
 console.log(`Olá meu nome é ${nomeUser} e eu tenho ${idadeUser} anos.`);
 
-//09-Crie um loop que imprima os números de 1 a 10 na tela.
-
+// ------------------------------------------------------------------------
 console.log('// Questão 09 ');
 
 let num = 1;
